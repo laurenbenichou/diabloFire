@@ -1,0 +1,17 @@
+{
+  "name": "diabloFireInteractive",
+  "version": "0.0.1",
+  "homepage": "https://github.com/laurenbenichou/diabloFire",
+  "authors": [
+    "Lauren Benichou <laurenbenichou@gmail.com>"
+  ],
+  "description": "Interactive for Bay Nature",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

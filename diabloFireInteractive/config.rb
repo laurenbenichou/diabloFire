@@ -29,6 +29,14 @@
 #  :which_fake_page => "Rendering a fake page with a local variable" }
 
 ###
+# Bower
+###
+
+after_configuration do
+  sprockets.append_path File.join root.to_s, "bower_components"
+end
+
+###
 # Helpers
 ###
 
@@ -36,9 +44,9 @@
 # activate :automatic_image_sizes
 
 # Reload the browser automatically whenever files change
-# configure :development do
-#   activate :livereload
-# end
+configure :development do
+  activate :livereload
+end
 
 # Methods defined in the helpers block are available in templates
 # helpers do
@@ -56,10 +64,12 @@ set :images_dir, 'img'
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment
-  # activate :minify_css
+  activate :minify_css
 
   # Minify Javascript on build
-  # activate :minify_javascript
+  activate :minify_javascript
+
+  activate :imageoptim
 
   # Enable cache buster
   # activate :asset_hash
