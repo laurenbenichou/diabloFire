@@ -1,4 +1,5 @@
 @import "base/variables";
+@import "mixins/flexbox"
 
 /*
  * HTML5 Boilerplate
@@ -94,11 +95,40 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+    html, body, #container
+        height 100%
+        background-color black
+        text-align center
+    
+    h1, p
+        color clr-blue
 
-    h1
-        color blue
+    
+    #main-image
+        height 80%
+        text-align center
 
 
+    #spread
+        height 100%
+
+
+    #specimen-nav
+        max-width 100%
+        overflow-x scroll
+        overflow-y hidden
+        flexbox(flex)
+        flex-direction(row)
+        flex-wrap(nowrap)
+        flex-justify(flex-start)
+        flex-align(flex-end)
+        background-color clr-purple
+        div
+            flex(200px, 10, 0, auto)
+            text-align center
+            img
+                height auto
+                width 80px
 
 
 
