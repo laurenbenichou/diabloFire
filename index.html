@@ -47,63 +47,63 @@
 
 	</div>
 	<div id="specimen-nav">
-		<div data-desc="">
+		<div data-id="snake">
 			<img src="img/Alameda-Whipsnake.png" >
 			<p>1 - Alameda Whipsnake</p>
 		</div>
-		<div>
+		<div data-id="brewer">
 			<img src="img/Brewers-Calandrinia.png" >
-			<p>2 - Brewers Calandrinia</p>
+			<p>2 - Brewer’s Red Maids</p>
 		</div>
-		<div>
+		<div data-id="californiatrasher">
 			<img src="img/California-Thrasher.png" >
 			<p>3 - California Thrasher</p>
 		</div>
-		<div>
+		<div data-id="chamise">
 		<img src="img/Chamise.png">
 			<p>4 - Chamise</p>
 		</div>
-		<div>
+		<div data-id="charcoalbeetle" >
 			<img src="img/CharcoalBeetle.png" >
 			<p>5 - Charcoal Beetle</p>
 		</div>
-		<div>
+		<div data-id="fremont">
 			<img src="img/Fremont-Star-Lily.png" >
 			<p>6 - Fremont Star Lily</p>
 		</div>
-		<div>
+		<div data-id="snapdragon">
 			<img src="img/Kellogs-Snapdragon.png">
 			<p>7 - Kellogs Snapdragon</p>
 		</div>
-		<div>
+		<div data-id="morning">
 			<img src="img/Morning-Glory.png">
 			<p>8 - Morning Glory</p>
 		</div>
-		<div>
+		<div data-id="fairylantern">
 			<img src="img/Mt-Diablo-Fairy-Lantern.png" >
-			<p>9 - Mt Diablo Fairy Lantern</p>
+			<p>9 - Mount Diablo Fairy Lantern</p>
 		</div>
-		<div>
+		<div data-id="californiapocket">
 			<img src="img/Pocket-Mouse.png" >
-			<p>10 - Pocket Mouse</p>
+			<p>10 - California Pocket Mouse</p>
 		</div>
-		<div>
+		<div data-id="californiapoppy">
 			<img src="img/Poppy.png" >
-			<p>11 - Poppy</p>
+			<p>11 - California Poppy</p>
 		</div>
-		<div>
+		<div data-id="tarantula">
 			<img src="img/Tarantula.png">
 			<p>12 - Tarantula</p>
 		</div>
-		<div>
+		<div data-id="whispering">
 			<img src="img/Whispering-Bells.png" width="200" height="237">
 			<p>13 - Whispering Bells</p>
 		</div>
-		<div>
+		<div data-id="firepoppy">
 			<img src="img/Fire-Poppy.png" width="122" height="237">
 			<p>14 - Fire Poppy</p>
 		</div>
-		<div>
+		<div data-id="ash">
 			<img src="img/Ash-Throated-Flycatcher.png" width="200" height="201">
 			<p>15 - Ash Throated Flycatcher</p>
 		</div>
@@ -117,14 +117,16 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+        <h3 class="modal-title" id="modalTitle"></h3>
       </div>
       <div class="modal-body">
-        ...
+      <div id="latin">
+        </div>
+        <div id="species_desc">
+        </div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
       </div>
     </div>
   </div>
@@ -132,9 +134,8 @@
 
 
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.0.min.js"><\/script>')</script>
-        <script src="js/vendor/mapHighlight.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="bower_components/jquery/dist/jquery.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
 
