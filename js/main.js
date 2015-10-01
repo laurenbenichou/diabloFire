@@ -1,0 +1,1 @@
+$(document).ready(function(){$("#specimen-nav div").on("mouseover",function(){var e=$(this).children()[0].src.split("/").pop();$.each($(".overlay"),function(o,n){e==n.src.split("_").pop()&&($(".overlay").removeClass("active"),$(n).addClass("active"))})}),$("#specimen-nav div").on("mouseout",function(){$(".overlay").removeClass("active")})});
